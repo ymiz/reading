@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 読書記録</title>
+    <link>https://ymiz.github.io/reading/tags/</link>
+    <description>Recent content in Tags on 読書記録</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-jp</language>
+    <lastBuildDate>Sun, 28 Jun 2020 13:25:14 +0900</lastBuildDate>
+    
+	<atom:link href="https://ymiz.github.io/reading/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>テンプレート</title>
+      <link>https://ymiz.github.io/reading/tags/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/</link>
+      <pubDate>Sun, 28 Jun 2020 13:25:14 +0900</pubDate>
+      
+      <guid>https://ymiz.github.io/reading/tags/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

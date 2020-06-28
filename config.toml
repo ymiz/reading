@@ -1,0 +1,10 @@
+baseURL = "https://ymiz.github.io/reading"
+languageCode = "ja-jp"
+title = "読書記録"
+theme = "beautifulhugo"
+pygmentsCodeFences = true
+pygmentsUseClasses = true
+publishDir = "docs"
+
+[Params]
+    useHLJS = true
