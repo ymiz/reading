@@ -8,7 +8,12 @@ draft: true
 
 ## タイトル
 
+テスト駆動開発
+
 ## 著者
+
+Kent Beck
+和田卓人
 
 ## amazon URL
 
@@ -34,3 +39,5 @@ https://www.amazon.co.jp/dp/product/B077D2L69C/ref=nosim?tag=inunekotokage-22
    - 〇〇の問題を解決する目的であればテストすべき
 
 # 得られた解決策
+
+# 気になった箇所
