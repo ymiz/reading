@@ -84,3 +84,5 @@ https://www.amazon.co.jp/dp/product/B077D2L69C/ref=nosim?tag=inunekotokage-22
 
 # 考えたこと
 - カバレッジは「テストしてないところあるけど考慮済？」とチェックしてくれるところに有用性があるのでは
+- 振る舞いとは何か
+  - よく使う言葉ではあるが、定義を説明できない
