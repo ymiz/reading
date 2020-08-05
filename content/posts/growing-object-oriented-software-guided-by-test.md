@@ -13,3 +13,9 @@ tags:
 ## amazon URL
 
 https://www.amazon.co.jp/dp/product/4798124583/ref=nosim?tag=inunekotokage-22
+
+## 著者
+- Steve Freeman (著)
+- Nat Pryce (著)
+- 和智 右桂  (翻訳)
+- 高木 正弘  (翻訳)
