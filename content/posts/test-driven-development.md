@@ -1,7 +1,7 @@
 ---
 title: "テスト駆動開発"
 date: 2020-08-16T13:11:42+09:00
-draft: true
+draft: false
 ---
 
 # 本のメタデータ
