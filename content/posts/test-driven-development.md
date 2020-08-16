@@ -1,7 +1,9 @@
 ---
 title: "テスト駆動開発"
 date: 2020-08-16T13:11:42+09:00
-draft: false
+draft: true
+tags:
+  - TDD
 ---
 
 # 本のメタデータ
@@ -17,7 +19,7 @@ Kent Beck
 
 ## amazon URL
 
-<https://www.amazon.co.jp/dp/product/B077D2L69C/ref=nosim?tag=inunekotokage-22>
+https://www.amazon.co.jp/dp/product/B077D2L69C/ref=nosim?tag=inunekotokage-22
 
 # 解決したい問題
 

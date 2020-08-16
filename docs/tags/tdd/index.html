@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
-  <title>読書記録 - 読書記録</title><script type="application/ld+json">
+  <title>TDD - 読書記録</title><script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "WebSite",
@@ -28,12 +28,12 @@
 }
 </script>
 
-<meta property="og:title" content="読書記録" />
-<meta property="og:url" content="https://ymiz.github.io/reading/" />
+<meta property="og:title" content="TDD" />
+<meta property="og:url" content="https://ymiz.github.io/reading/tags/tdd/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="読書記録" />
 
-  <meta name="twitter:title" content="読書記録" />
+  <meta name="twitter:title" content="TDD" />
   <meta name="twitter:card" content="summary" />
   <meta name="generator" content="Hugo 0.73.0" />
   <link rel="alternate" href="https://ymiz.github.io/reading/index.xml" type="application/rss+xml" title="読書記録"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
@@ -142,9 +142,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div class="page-heading">
+            <div class="tags-heading">
               
-                <h1>読書記録</h1>
+                <h1>TDD</h1>
               
               
                 <hr class="small">
@@ -160,17 +160,15 @@
 
 
     
-  <div role="main" class="container">
+  <div class="container" role="main">
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         
-
         <div class="posts-list">
           
-          
             <article class="post-preview">
-    <a href="https://ymiz.github.io/reading/posts/reading-issue-template/">
-        <h2 class="post-title">Reading Issue Template</h2>
+    <a href="https://ymiz.github.io/reading/posts/test-driven-development/">
+        <h2 class="post-title">テスト駆動開発</h2>
         
         
         
@@ -180,7 +178,7 @@
         <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on June 28, 2020
+  <i class="fas fa-calendar"></i>&nbsp;Posted on August 16, 2020
   
   
   
@@ -196,24 +194,18 @@
     </p>
     <div class="post-entry">
         
-        <h1 id="本のメタデータ">本のメタデータ</h1>
-<h2 id="タイトル">タイトル</h2>
-<h2 id="著者">著者</h2>
-<h2 id="amazon-url">amazon URL</h2>
-<h1 id="解決したい問題">解決したい問題</h1>
-<h1 id="内容予測">内容予測</h1>
-<h1 id="気になった箇所">気になった箇所</h1>
-<h1 id="得られた解決策">得られた解決策</h1>
-<h1 id="考えたこと">考えたこと</h1>
-<h1 id="残った問題">残った問題</h1>
-
+        本のメタデータ タイトル テスト駆動開発
+著者 Kent Beck 和田卓人
+amazon URL https://www.amazon.co.jp/dp/product/B077D2L69C/ref=nosim?tag=inunekotokage-22
+解決したい問題  どういう問題を解決するために unittest を利用すべきか説明できない  例えば  課金に絡むクリティカルな箇所の安全性を上げるため 不具合の再発防止のため   といった目的が考えられるが、それだけか？ テストファーストはなぜ必要？   返り値が無い関数をテストすべき？テストすべきであればどうテストすべき？  関数内部で実行されている処理をモックしてそれが実行されていればよい？  なぜそれでよいと言える？      内容予測  どういう問題を解決するために unittest を利用すべきか説明できない  unittest でいくつか解決できる問題があり、それぞれの問題で unittest の利用方法が異なる   返り値が無い関数をテストすべき？テストすべきであればどうテストすべき？  〇〇の問題を解決する目的であればテストすべき    得られた解決策  どういう問題を解決するために unittest を利用すべきか説明できない  いつテストを書くべきだろうか--それはテスト対象のコードを書く前だ。 (192p)  いつ書くかべきかは単純明快だった  テストファースト     それでも、テストの効果（設計とスコープの制御）はすぐに現れるので、まずはテストを書き始め、適度なストレスの下でも書き続ける十分な理由になる。 (192p)  テストの効果は設計とスコープの制御  ここでいう「設計」とは具体的にどういうものか？ 「スコープの制御」とは  目の前の問題に集中すれば、より良い仕事ができる。次のテストケースを書くときも、その問題のことだけを考えられる。それより前に書いたテストが動くことはわかっているからだ。 (218p) 問題を自身が集中できる範囲に絞ること  テストを書くとこれを効率的に行える  一旦はそのテストに関してレッド・グリーン・リファクタリングを行えばよいので           どのくらいテストを書けばよいかについて考えるとき、私は平均故障間隔（MTBF: Mean Time Between Failures）を思い浮かべる。（中略）テストを書く意味があるかどうかは、どの程度の MTBF を考えているかによる。 (269p)  カバレッジ 100%を目指さなくてよい 必要十分なテストを書く  何が必要十分かということに統一的な答えは無い  考え続ける必要がある       TDDにおいてテストは目的を達成するための手段であり、その目的とは、大いなる自信を伴うコードだ。たとえテスト無しでも実装の知識による自信があるのであれば、テストを書かない。 (269p)  自信という言葉が TDD の重要キーワードの一つのようだ ふと他人に実装仕様を聞かれたときに、どれだけの自信を持ってこういう実装仕様だと説明できるか？ ふと他人にこういう変更が可能かと聞かれたときに、どれだけの自信を持って可能です・難しいですと言えるか？      気になった箇所 「動作するきれいなコード」。RonJeffriesのこの簡潔な言葉が、テスト駆動開発（TDD）のゴールだ。 ＫｅｎｔＢｅｃｋ.
+        <a href="https://ymiz.github.io/reading/posts/test-driven-development/" class="post-read-more">[Read More]</a>
         
     </div>
 
     
     <div class="blog-tags">
         
-        <a href="https://ymiz.github.io/reading//tags/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/">テンプレート</a>&nbsp;
+        <a href="https://ymiz.github.io/reading//tags/tdd/">TDD</a>&nbsp;
         
     </div>
     
@@ -221,21 +213,12 @@
 </article>
           
         </div>
-
         
       </div>
     </div>
   </div>
 
       
-    <div class="page-meta">
-  
-  
-  
-</div>
-
-
-  
 <footer>
   <div class="container">
     <div class="row">
