@@ -6,10 +6,19 @@
     <description>Recent content in Tags on 読書記録</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 28 Jun 2020 13:25:14 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2020 06:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://ymiz.github.io/reading/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>TDD</title>
+      <link>https://ymiz.github.io/reading/tags/tdd/</link>
+      <pubDate>Sun, 23 Aug 2020 06:30:00 +0900</pubDate>
+      
+      <guid>https://ymiz.github.io/reading/tags/tdd/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>テンプレート</title>

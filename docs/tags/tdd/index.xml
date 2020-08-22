@@ -6,7 +6,7 @@
     <description>Recent content in TDD on 読書記録</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 16 Aug 2020 13:11:42 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2020 06:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://ymiz.github.io/reading/tags/tdd/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,13 +14,51 @@
     <item>
       <title>テスト駆動開発</title>
       <link>https://ymiz.github.io/reading/posts/test-driven-development/</link>
-      <pubDate>Sun, 16 Aug 2020 13:11:42 +0900</pubDate>
+      <pubDate>Sun, 23 Aug 2020 06:30:00 +0900</pubDate>
       
       <guid>https://ymiz.github.io/reading/posts/test-driven-development/</guid>
-      <description>本のメタデータ タイトル テスト駆動開発
-著者 Kent Beck 和田卓人
-amazon URL https://www.amazon.co.jp/dp/product/B077D2L69C/ref=nosim?tag=inunekotokage-22
-解決したい問題  どういう問題を解決するために unittest を利用すべきか説明できない  例えば  課金に絡むクリティカルな箇所の安全性を上げるため 不具合の再発防止のため   といった目的が考えられるが、それだけか？ テストファーストはなぜ必要？   返り値が無い関数をテストすべき？テストすべきであればどうテストすべき？  関数内部で実行されている処理をモックしてそれが実行されていればよい？  なぜそれでよいと言える？      内容予測  どういう問題を解決するために unittest を利用すべきか説明できない  unittest でいくつか解決できる問題があり、それぞれの問題で unittest の利用方法が異なる   返り値が無い関数をテストすべき？テストすべきであればどうテストすべき？  〇〇の問題を解決する目的であればテストすべき    得られた解決策  どういう問題を解決するために unittest を利用すべきか説明できない  いつテストを書くべきだろうか--それはテスト対象のコードを書く前だ。 (192p)  いつ書くかべきかは単純明快だった  テストファースト     それでも、テストの効果（設計とスコープの制御）はすぐに現れるので、まずはテストを書き始め、適度なストレスの下でも書き続ける十分な理由になる。 (192p)  テストの効果は設計とスコープの制御  ここでいう「設計」とは具体的にどういうものか？ 「スコープの制御」とは  目の前の問題に集中すれば、より良い仕事ができる。次のテストケースを書くときも、その問題のことだけを考えられる。それより前に書いたテストが動くことはわかっているからだ。 (218p) 問題を自身が集中できる範囲に絞ること  テストを書くとこれを効率的に行える  一旦はそのテストに関してレッド・グリーン・リファクタリングを行えばよいので           どのくらいテストを書けばよいかについて考えるとき、私は平均故障間隔（MTBF: Mean Time Between Failures）を思い浮かべる。（中略）テストを書く意味があるかどうかは、どの程度の MTBF を考えているかによる。 (269p)  カバレッジ 100%を目指さなくてよい 必要十分なテストを書く  何が必要十分かということに統一的な答えは無い  考え続ける必要がある       TDDにおいてテストは目的を達成するための手段であり、その目的とは、大いなる自信を伴うコードだ。たとえテスト無しでも実装の知識による自信があるのであれば、テストを書かない。 (269p)  自信という言葉が TDD の重要キーワードの一つのようだ ふと他人に実装仕様を聞かれたときに、どれだけの自信を持ってこういう実装仕様だと説明できるか？ ふと他人にこういう変更が可能かと聞かれたときに、どれだけの自信を持って可能です・難しいですと言えるか？      気になった箇所 「動作するきれいなコード」。RonJeffriesのこの簡潔な言葉が、テスト駆動開発（TDD）のゴールだ。 ＫｅｎｔＢｅｃｋ.</description>
+      <description>&lt;h2 id=&#34;本のメタデータ&#34;&gt;本のメタデータ&lt;/h2&gt;
+&lt;h3 id=&#34;タイトル&#34;&gt;タイトル&lt;/h3&gt;
+&lt;p&gt;テスト駆動開発&lt;/p&gt;
+&lt;h3 id=&#34;著者&#34;&gt;著者&lt;/h3&gt;
+&lt;p&gt;Kent Beck
+和田卓人&lt;/p&gt;
+&lt;h3 id=&#34;amazon-link&#34;&gt;amazon Link&lt;/h3&gt;
+&lt;iframe
+  style=&#34;width: 120px; height: 240px;&#34;
+  marginwidth=&#34;0&#34;
+  marginheight=&#34;0&#34;
+  scrolling=&#34;no&#34;
+  frameborder=&#34;0&#34;
+  src=&#34;https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&amp;t=inunekotokage-22&amp;m=amazon&amp;o=9&amp;p=8&amp;l=as1&amp;IS2=1&amp;detail=1&amp;asins=B077D2L69C&amp;linkId=8f9ec67b92cc086d49bc6805d260d69d&amp;bc1=000000&amp;lt1=_blank&amp;fc1=333333&amp;lc1=0066c0&amp;bg1=ffffff&amp;f=ifr&#34;
+&gt;
+&lt;/iframe&gt;
+
+&lt;h2 id=&#34;読書前情報&#34;&gt;読書前情報&lt;/h2&gt;
+&lt;h3 id=&#34;読むことで解決したい問題&#34;&gt;読むことで解決したい問題&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;どういう問題を解決するために unittest を利用すべきか説明できない
+&lt;ul&gt;
+&lt;li&gt;例えば
+&lt;ul&gt;
+&lt;li&gt;課金に絡むクリティカルな箇所の安全性を上げるため&lt;/li&gt;
+&lt;li&gt;不具合の再発防止のため&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;といった目的が考えられるが、それだけか？&lt;/li&gt;
+&lt;li&gt;テストファーストはなぜ必要？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;返り値が無い関数をテストすべき？テストすべきであればどうテストすべき？
+&lt;ul&gt;
+&lt;li&gt;関数内部で実行されている処理をモックしてそれが実行されていればよい？
+&lt;ul&gt;
+&lt;li&gt;なぜそれでよいと言える？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
     </item>
     
   </channel>

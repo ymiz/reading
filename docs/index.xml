@@ -6,10 +6,60 @@
     <description>Recent content on 読書記録</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-jp</language>
-    <lastBuildDate>Sun, 28 Jun 2020 13:25:14 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2020 06:30:00 +0900</lastBuildDate>
     
 	<atom:link href="https://ymiz.github.io/reading/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>テスト駆動開発</title>
+      <link>https://ymiz.github.io/reading/posts/test-driven-development/</link>
+      <pubDate>Sun, 23 Aug 2020 06:30:00 +0900</pubDate>
+      
+      <guid>https://ymiz.github.io/reading/posts/test-driven-development/</guid>
+      <description>&lt;h2 id=&#34;本のメタデータ&#34;&gt;本のメタデータ&lt;/h2&gt;
+&lt;h3 id=&#34;タイトル&#34;&gt;タイトル&lt;/h3&gt;
+&lt;p&gt;テスト駆動開発&lt;/p&gt;
+&lt;h3 id=&#34;著者&#34;&gt;著者&lt;/h3&gt;
+&lt;p&gt;Kent Beck
+和田卓人&lt;/p&gt;
+&lt;h3 id=&#34;amazon-link&#34;&gt;amazon Link&lt;/h3&gt;
+&lt;iframe
+  style=&#34;width: 120px; height: 240px;&#34;
+  marginwidth=&#34;0&#34;
+  marginheight=&#34;0&#34;
+  scrolling=&#34;no&#34;
+  frameborder=&#34;0&#34;
+  src=&#34;https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&amp;t=inunekotokage-22&amp;m=amazon&amp;o=9&amp;p=8&amp;l=as1&amp;IS2=1&amp;detail=1&amp;asins=B077D2L69C&amp;linkId=8f9ec67b92cc086d49bc6805d260d69d&amp;bc1=000000&amp;lt1=_blank&amp;fc1=333333&amp;lc1=0066c0&amp;bg1=ffffff&amp;f=ifr&#34;
+&gt;
+&lt;/iframe&gt;
+
+&lt;h2 id=&#34;読書前情報&#34;&gt;読書前情報&lt;/h2&gt;
+&lt;h3 id=&#34;読むことで解決したい問題&#34;&gt;読むことで解決したい問題&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;どういう問題を解決するために unittest を利用すべきか説明できない
+&lt;ul&gt;
+&lt;li&gt;例えば
+&lt;ul&gt;
+&lt;li&gt;課金に絡むクリティカルな箇所の安全性を上げるため&lt;/li&gt;
+&lt;li&gt;不具合の再発防止のため&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;といった目的が考えられるが、それだけか？&lt;/li&gt;
+&lt;li&gt;テストファーストはなぜ必要？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;返り値が無い関数をテストすべき？テストすべきであればどうテストすべき？
+&lt;ul&gt;
+&lt;li&gt;関数内部で実行されている処理をモックしてそれが実行されていればよい？
+&lt;ul&gt;
+&lt;li&gt;なぜそれでよいと言える？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</description>
+    </item>
     
     <item>
       <title>Reading Issue Template</title>
@@ -17,7 +67,21 @@
       <pubDate>Sun, 28 Jun 2020 13:25:14 +0900</pubDate>
       
       <guid>https://ymiz.github.io/reading/posts/reading-issue-template/</guid>
-      <description>本のメタデータ タイトル 著者 amazon URL 解決したい問題 内容予測 気になった箇所 得られた解決策 考えたこと 残った問題 </description>
+      <description>&lt;h2 id=&#34;本のメタデータ&#34;&gt;本のメタデータ&lt;/h2&gt;
+&lt;h3 id=&#34;タイトル&#34;&gt;タイトル&lt;/h3&gt;
+&lt;h3 id=&#34;著者&#34;&gt;著者&lt;/h3&gt;
+&lt;h3 id=&#34;amazon-link&#34;&gt;amazon Link&lt;/h3&gt;
+&lt;iframe
+  style=&#34;width: 120px; height: 240px;&#34;
+  marginwidth=&#34;0&#34;
+  marginheight=&#34;0&#34;
+  scrolling=&#34;no&#34;
+  frameborder=&#34;0&#34;
+  src=&#34;https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&amp;t=inunekotokage-22&amp;m=amazon&amp;o=9&amp;p=8&amp;l=as1&amp;IS2=1&amp;detail=1&amp;asins=&amp;linkId=8f9ec67b92cc086d49bc6805d260d69d&amp;bc1=000000&amp;lt1=_blank&amp;fc1=333333&amp;lc1=0066c0&amp;bg1=ffffff&amp;f=ifr&#34;
+&gt;
+&lt;/iframe&gt;
+
+&lt;h2 id=&#34;この本を読むことで解決したい問題&#34;&gt;この本を読むことで解決したい問題&lt;/h2&gt;</description>
     </item>
     
   </channel>

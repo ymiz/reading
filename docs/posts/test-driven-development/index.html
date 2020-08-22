@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>テスト駆動開発 - 読書記録</title>
+  <meta name="description" content="本のメタデータ
+タイトル
+テスト駆動開発
+著者
+Kent Beck
+和田卓人
+amazon Link
+
+
+
+読書前情報
+読むことで解決したい問題
+
+どういう問題を解決するために unittest を利用すべきか説明できない
+
+例えば
+
+課金に絡むクリティカルな箇所の安全性を上げるため
+不具合の再発防止のため
+
+
+といった目的が考えられるが、それだけか？
+テストファーストはなぜ必要？
+
+
+返り値が無い関数をテストすべき？テストすべきであればどうテストすべき？
+
+関数内部で実行されている処理をモックしてそれが実行されていればよい？
+
+なぜそれでよいと言える？
+
+
+
+
+"><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "読書記録",
+    
+    "url": "https:\/\/ymiz.github.io\/reading\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/ymiz.github.io\/reading\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/ymiz.github.io\/reading\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/ymiz.github.io\/reading\/posts\/test-driven-development\/",
+          "name": "テスト駆動開発"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : ""
+  },
+  "headline": "テスト駆動開発",
+  "description" : "本のメタデータ タイトル テスト駆動開発\n著者 Kent Beck 和田卓人\namazon Link  読書前情報 読むことで解決したい問題  どういう問題を解決するために unittest を利用すべきか説明できない  例えば  課金に絡むクリティカルな箇所の安全性を上げるため 不具合の再発防止のため   といった目的が考えられるが、それだけか？ テストファーストはなぜ必要？   返り値が無い関数をテストすべき？テストすべきであればどうテストすべき？  関数内部で実行されている処理をモックしてそれが実行されていればよい？  なぜそれでよいと言える？     ",
+  "inLanguage" : "en",
+  "wordCount":  111 ,
+  "datePublished" : "2020-08-23T06:30:00",
+  "dateModified" : "2020-08-23T06:30:00",
+  "image" : "https:\/\/ymiz.github.io\/reading\/",
+  "keywords" : [ "TDD" ],
+  "mainEntityOfPage" : "https:\/\/ymiz.github.io\/reading\/posts\/test-driven-development\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/ymiz.github.io\/reading\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/ymiz.github.io\/reading\/",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="テスト駆動開発" />
+<meta property="og:description" content="本のメタデータ
+タイトル
+テスト駆動開発
+著者
+Kent Beck
+和田卓人
+amazon Link
+
+
+
+読書前情報
+読むことで解決したい問題
+
+どういう問題を解決するために unittest を利用すべきか説明できない
+
+例えば
+
+課金に絡むクリティカルな箇所の安全性を上げるため
+不具合の再発防止のため
+
+
+といった目的が考えられるが、それだけか？
+テストファーストはなぜ必要？
+
+
+返り値が無い関数をテストすべき？テストすべきであればどうテストすべき？
+
+関数内部で実行されている処理をモックしてそれが実行されていればよい？
+
+なぜそれでよいと言える？
+
+
+
+
+">
+<meta property="og:url" content="https://ymiz.github.io/reading/posts/test-driven-development/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="読書記録" />
+
+  <meta name="twitter:title" content="テスト駆動開発" />
+  <meta name="twitter:description" content="本のメタデータ
+タイトル
+テスト駆動開発
+著者
+Kent Beck
+和田卓人
+amazon Link
+">
+  <meta name="twitter:card" content="summary" />
+  <meta name="generator" content="Hugo 0.73.0" />
+  <link rel="alternate" href="https://ymiz.github.io/reading/index.xml" type="application/rss+xml" title="読書記録"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://ymiz.github.io/reading/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://ymiz.github.io/reading/css/highlight.min.css" /><link rel="stylesheet" href="https://ymiz.github.io/reading/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://ymiz.github.io/reading/">読書記録</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="posts-heading">
+              
+                <h1>テスト駆動開発</h1>
+              
+              
+                <hr class="small">
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <h2 id="本のメタデータ">本のメタデータ</h2>
+<h3 id="タイトル">タイトル</h3>
+<p>テスト駆動開発</p>
+<h3 id="著者">著者</h3>
+<p>Kent Beck
+和田卓人</p>
+<h3 id="amazon-link">amazon Link</h3>
+<iframe
+  style="width: 120px; height: 240px;"
+  marginwidth="0"
+  marginheight="0"
+  scrolling="no"
+  frameborder="0"
+  src="https://rcm-fe.amazon-adsystem.com/e/cm?ref=tf_til&t=inunekotokage-22&m=amazon&o=9&p=8&l=as1&IS2=1&detail=1&asins=B077D2L69C&linkId=8f9ec67b92cc086d49bc6805d260d69d&bc1=000000&lt1=_blank&fc1=333333&lc1=0066c0&bg1=ffffff&f=ifr"
+>
+</iframe>
+
+<h2 id="読書前情報">読書前情報</h2>
+<h3 id="読むことで解決したい問題">読むことで解決したい問題</h3>
+<ol>
+<li>どういう問題を解決するために unittest を利用すべきか説明できない
+<ul>
+<li>例えば
+<ul>
+<li>課金に絡むクリティカルな箇所の安全性を上げるため</li>
+<li>不具合の再発防止のため</li>
+</ul>
+</li>
+<li>といった目的が考えられるが、それだけか？</li>
+<li>テストファーストはなぜ必要？</li>
+</ul>
+</li>
+<li>返り値が無い関数をテストすべき？テストすべきであればどうテストすべき？
+<ul>
+<li>関数内部で実行されている処理をモックしてそれが実行されていればよい？
+<ul>
+<li>なぜそれでよいと言える？</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="内容予測">内容予測</h3>
+<ol>
+<li>どういう問題を解決するために unittest を利用すべきか説明できない
+<ul>
+<li>unittest でいくつか解決できる問題があり、それぞれの問題で unittest の利用方法が異なる</li>
+</ul>
+</li>
+<li>返り値が無い関数をテストすべき？テストすべきであればどうテストすべき？
+<ul>
+<li>〇〇の問題を解決する目的であればテストすべき</li>
+</ul>
+</li>
+</ol>
+<h2 id="得られた解決策">得られた解決策</h2>
+<ol>
+<li>どういう問題を解決するために unittest を利用すべきか説明できない
+<ul>
+<li><code>いつテストを書くべきだろうか--それはテスト対象のコードを書く前だ。</code> (192p)
+<ul>
+<li>いつ書くかべきかは単純明快だった
+<ul>
+<li>テストファースト</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>それでも、テストの効果（設計とスコープの制御）はすぐに現れるので、まずはテストを書き始め、適度なストレスの下でも書き続ける十分な理由になる。</code> (192p)
+<ul>
+<li>テストの効果は設計とスコープの制御
+<ul>
+<li>ここでいう「設計」とは具体的にどういうものか？</li>
+<li>「スコープの制御」とは
+<ul>
+<li><code>目の前の問題に集中すれば、より良い仕事ができる。次のテストケースを書くときも、その問題のことだけを考えられる。それより前に書いたテストが動くことはわかっているからだ。</code> (218p)</li>
+<li>問題を自身が集中できる範囲に絞ること
+<ul>
+<li>テストを書くとこれを効率的に行える
+<ul>
+<li>一旦はそのテストに関してレッド・グリーン・リファクタリングを行えばよいので</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>どのくらいテストを書けばよいかについて考えるとき、私は平均故障間隔（MTBF: Mean Time Between Failures）を思い浮かべる。（中略）テストを書く意味があるかどうかは、どの程度の MTBF を考えているかによる。</code> (269p)
+<ul>
+<li>カバレッジ 100%を目指さなくてよい</li>
+<li>必要十分なテストを書く
+<ul>
+<li>何が必要十分かということに統一的な答えは無い
+<ul>
+<li>考え続ける必要がある</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>TDDにおいてテストは目的を達成するための手段であり、その目的とは、大いなる自信を伴うコードだ。たとえテスト無しでも実装の知識による自信があるのであれば、テストを書かない。</code> (269p)
+<ul>
+<li>自信という言葉が TDD の重要キーワードの一つのようだ</li>
+<li>ふと他人に実装仕様を聞かれたときに、どれだけの自信を持ってこういう実装仕様だと説明できるか？</li>
+<li>ふと他人にこういう変更が可能かと聞かれたときに、どれだけの自信を持って可能です・難しいですと言えるか？</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="気になった箇所">気になった箇所</h2>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">「動作するきれいなコード」。RonJeffriesのこの簡潔な言葉が、テスト駆動開発（TDD）のゴールだ。
+
+ＫｅｎｔＢｅｃｋ. テスト駆動開発 (Japanese Edition) (Kindle の位置No.23-24). Kindle 版.
+</code></pre></div><ul>
+<li>ゴールを一言で表現できるのは素晴らしい
+<ul>
+<li>なぜ素晴らしいかといえば、説明しやすいから
+<ul>
+<li>「動作する」とは何か、「きれいな」とはどういった状態か、という問題はある</li>
+<li>しかしその疑問が浮かぶことが、この言葉が次の段階への道標としての役割も果たしていることも意味している
+<ul>
+<li>「次の段階」とは、TDD についてより詳しく知ることを指す</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>思想がシンプルだから一言で表現できるのだろう</li>
+</ul>
+<hr>
+<div class="highlight"><pre class="chroma"><code class="language-text" data-lang="text">頭の中にある悩みをテストとして表現した。完璧ではないものの、まずまずのやり方（getClass）でテストを通した。さらなる設計は、本当に必要になるときまで先延ばしにすることにした。
+
+ＫｅｎｔＢｅｃｋ. テスト駆動開発 (Japanese Edition) (Kindle の位置No.863-865). Kindle 版.
+</code></pre></div><ul>
+<li>unittest が設計を助ける、というようなことは聞いたことがある</li>
+<li>しかしそれがどういうことなのか説明はできない</li>
+<li><code>頭の中にある悩みをテストとして表現した</code> というのは問題を頭の中から取り出して実装に変換するという点で設計を助けている一例と言えそう</li>
+<li>ただ、この効用は分かったようで分かっていないようにも思える
+<ul>
+<li>このテストを書いた場合と書いていない場合で比較して、設計に関してどういう差があるか説明できないから</li>
+</ul>
+</li>
+</ul>
+<h2 id="考えたこと">考えたこと</h2>
+<ul>
+<li>カバレッジは「テストしてないところあるけど考慮済？」とチェックしてくれるところに有用性があるのでは</li>
+<li>振る舞いとは何か
+<ul>
+<li>よく使う言葉ではあるが、定義を説明できない</li>
+</ul>
+</li>
+</ul>
+<h2 id="残った問題">残った問題</h2>
+<ul>
+<li>設計とは何か、納得のいく説明ができない</li>
+<li>振る舞いとは何か、納得のいく説明ができない</li>
+<li>返り値が無い関数をテストすべき？テストすべきであればどうテストすべき？</li>
+</ul>
+
+        
+          <div class="blog-tags">
+            
+              <a href="https://ymiz.github.io/reading//tags/tdd/">TDD</a>&nbsp;
+            
+          </div>
+        
+
+        
+
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://ymiz.github.io/reading/posts/reading-issue-template/" data-toggle="tooltip" data-placement="top" title="Reading Issue Template">&larr; Previous Post</a>
+            </li>
+          
+          
+        </ul>
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2020
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://ymiz.github.io/reading/">読書記録</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.73.0</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://ymiz.github.io/reading/js/main.js"></script>
+<script src="https://ymiz.github.io/reading/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://ymiz.github.io/reading/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+

@@ -4,7 +4,27 @@
   
   <url>
     <loc>https://ymiz.github.io/reading/posts/</loc>
-    <lastmod>2020-06-28T13:25:14+09:00</lastmod>
+    <lastmod>2020-08-23T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ymiz.github.io/reading/tags/</loc>
+    <lastmod>2020-08-23T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ymiz.github.io/reading/tags/tdd/</loc>
+    <lastmod>2020-08-23T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ymiz.github.io/reading/posts/test-driven-development/</loc>
+    <lastmod>2020-08-23T06:30:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://ymiz.github.io/reading/</loc>
+    <lastmod>2020-08-23T06:30:00+09:00</lastmod>
   </url>
   
   <url>
@@ -13,17 +33,7 @@
   </url>
   
   <url>
-    <loc>https://ymiz.github.io/reading/tags/</loc>
-    <lastmod>2020-06-28T13:25:14+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://ymiz.github.io/reading/tags/%E3%83%86%E3%83%B3%E3%83%97%E3%83%AC%E3%83%BC%E3%83%88/</loc>
-    <lastmod>2020-06-28T13:25:14+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ymiz.github.io/reading/</loc>
     <lastmod>2020-06-28T13:25:14+09:00</lastmod>
   </url>
   
